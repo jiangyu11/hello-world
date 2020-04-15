@@ -1,1 +1,106 @@
-<mxfile host="www.draw.io" modified="2020-04-15T03:02:49.482Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" version="12.9.2" etag="fJOvAi_NgZGhwhV9il6N" type="github"><diagram id="CfG8pV2q8Ehm_7Cjaebc">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-04-15T06:07:28.226Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="5U0XZvd85XXMV7oK5qJz" version="12.9.2" type="github">
+  <diagram id="CfG8pV2q8Ehm_7Cjaebc" name="Page-1">
+    <mxGraphModel dx="1612" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-4" value="数仓审核" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HbYD46Mp6wN7ym-_LOcF-2" target="HbYD46Mp6wN7ym-_LOcF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-2" value="新建任务&lt;br&gt;db_2_hdfs" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="145" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HbYD46Mp6wN7ym-_LOcF-3" target="HbYD46Mp6wN7ym-_LOcF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-12" value="vss审核" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="HbYD46Mp6wN7ym-_LOcF-10">
+          <mxGeometry x="-0.824" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-15" value="全量模式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="HbYD46Mp6wN7ym-_LOcF-10">
+          <mxGeometry x="0.3246" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-3" value="1、新建vss任务&lt;br&gt;2、数仓配置生命周期和主题，字段等信息&lt;br&gt;3、提交任务到线上，任务状态stop&lt;br&gt;4、提交vss上线工单" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-9" value="1、建add partition任务&lt;br&gt;2、起调vss任务&lt;br&gt;3、资源注册，建meta表&lt;br&gt;4、更新任务状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="HbYD46Mp6wN7ym-_LOcF-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="195" y="250" as="sourcePoint" />
+            <mxPoint x="283" y="278" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-16" value="hbase模式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="HbYD46Mp6wN7ym-_LOcF-13">
+          <mxGeometry x="0.0937" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-14" value="1、建mr/add partition任务&lt;br&gt;2、起调vss任务（增量+2hdfs全量）&lt;br&gt;3、bulkload写hbase&lt;br&gt;4、资源注册，建meta表&lt;br&gt;5.更新任务状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="290" width="145" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-23" value="定时任务，拉全量模式的任务，0点之后循环调度vss全量任务" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-25" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HbYD46Mp6wN7ym-_LOcF-23" target="HbYD46Mp6wN7ym-_LOcF-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="420" as="sourcePoint" />
+            <mxPoint x="150" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-27" value="监听第3步骤，运行完成执行补数据" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;strokeWidth=2;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-28" value="&lt;div&gt;监听vss任务&lt;/div&gt;&lt;div&gt;完成mq,任务执行完成补数据&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;dashPattern=1 1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-17.5" y="220" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-29" value="删除任务（回收）&lt;br&gt;db_2_hdfs" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="145" y="660" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-31" value="任务&lt;br&gt;1.vss任务&lt;br&gt;2.mars任务(add partition任务)&lt;br&gt;3.sync-man任务&lt;br&gt;资源&lt;br&gt;1、ods表&lt;br&gt;2、hdfs文件&lt;br&gt;3、meta表" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#d5e8d4;align=left;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-33" value="任务&lt;br&gt;1.vss任务(增量+全量)&lt;br&gt;2、mars任务（mr/add partitionr）&lt;br&gt;3、bulkload任务&lt;br&gt;4、sync-man任务&lt;br&gt;资源&lt;br&gt;1、ods表&lt;br&gt;2、hdfs文件&lt;br&gt;3、hbase表&lt;br&gt;4、meta表" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#d5e8d4;align=left;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="490" width="140" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-34" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-80" y="220" as="sourcePoint" />
+            <mxPoint x="470" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-35" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-17.5" y="480" as="sourcePoint" />
+            <mxPoint x="442.5" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-36" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-80" y="720" as="sourcePoint" />
+            <mxPoint x="440" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-38" value="sync-man&lt;br&gt;daily" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="110" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-39" value="sync-man&lt;br&gt;online" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="315" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HbYD46Mp6wN7ym-_LOcF-40" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="722" as="sourcePoint" />
+            <mxPoint x="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
